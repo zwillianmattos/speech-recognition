@@ -3,25 +3,27 @@ version '1.0-SNAPSHOT'
 
 buildscript {
     repositories {
-        jcenter()
+        google()
+        mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.1.2'
+        classpath 'com.android.tools.build:gradle:7.0.0'
     }
 }
 
 allprojects {
     repositories {
-        jcenter()
+        google()
+        mavenCentral()
     }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion '30.0.3'
+    compileSdkVersion 25
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
